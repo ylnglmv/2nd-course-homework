@@ -61,3 +61,4 @@ gap: 32px;
 .game3 {
     background-image: url(img/game3.png);
 }
+@import 'mobile';
