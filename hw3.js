@@ -1,6 +1,7 @@
 // Задание 1 
 let password = 'пароль';
 let input = prompt('Введите пароль');
+password = input
 if (password = true) {
     alert('Пароль введен верно');
 } else {
@@ -30,48 +31,35 @@ if (d > 100 || e > 100) {
 let a = '2';
 let b = '3';
 // Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
-alert(2 + 3);
+let a = Number
+let b = Number
+alert(a + b);
 
 // Задание 5 
 
 let monthNumber = prompt ('Введине номер месяца')
+monthNumber = Number
 
 switch (monthNumber) {
     case 1:
-        console.log('зима');
-        break;
     case 2:
+    case 12:
         console.log('зима');
         break;
     case 3:
-        console.log('весна');
-        break;
     case 4:
-        console.log('весна');
-        break;
     case 5:
         console.log('весна');
         break;
     case 6:
-        console.log('лето');
-        break;
     case 7:
-        console.log('лето');
-        break;
     case 8:
         console.log('лето');
         break;
     case 9:
-        console.log('осень');
-        break;
     case 10:
-        console.log('осень');
-        break;
     case 11:
-        console.log('зима');
-        break;
-    case 12:
-        console.log('зима');
+        console.log('осень');
         break;
     default:
         console.log('Такого месяца не существует');
@@ -80,19 +68,19 @@ switch (monthNumber) {
 
 // Задание 7 
 let number = prompt ('Пожалуйста, введите любое число')
-if (number = number) {
+if (number = Number) {
     console.log(number);
-} else {
+} else if {
     console.log(NaN);
-}
-if (number / 2 = % = 0) {
+}else if (number / 2 = % = 0) {
     console.log('число чётное');
 } else {
-    alert ('Число нечетное');
+    alert (' число нечетное');
 }
 
 // Задание 8 и 9 
 let clientOS = 0 || 1
+let clientOS = prompt (Какая у вас операционная система? Если iOS, то введите цифру 0, есди Android, то цифру 1.)
 0 = iOS
 1 = Android
 if (clientOS = 0) {
