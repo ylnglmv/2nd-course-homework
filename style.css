@@ -1,63 +1,98 @@
 * {
-    margin: 0%;
-    padding: 0%;
+  margin: 0%;
+  padding: 0%;
 }
+
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
+
 .title {
-color: #FFF;
-font-size: 64px;
-font-weight: 700;
-width: 788px;
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 700;
+  width: 788px;
 }
+
 .desc {
-color: #FFF;
-font-size: 18px;
-font-weight: 300;
-line-height: 32px;
-width: 481px;
-padding-top: 32px;
-padding-bottom: 44px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  width: 481px;
+  padding-top: 32px;
+  padding-bottom: 44px;
 }
+
 .welcome {
-    background-image: url(img/main.png);
-    height: 1024px;
-    padding-top: 217px;
-    padding-left: 120px;
+  background-image: url(img/main.png);
+  height: 1024px;
+  padding-top: 217px;
+  padding-left: 120px;
 }
+
 .button {
-    border-radius: 30px;
-    background: #9C0332;  
-    width: 234.063px;
-height: 48.603px;
-flex-shrink: 0;
-color: #FFF;
-font-size: 18px;
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234.063px;
+  height: 48.603px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-size: 18px;
 }
+
 .games {
-    background: #000915;
-    height: 556px;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-gap: 32px;
+  background: #000915;
+  height: 556px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 
 .game {
-    width: 379px;
-    height: 300px;
-    border-radius: 16px;
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+}
 
-}
 .game1 {
-    background-image: url(img/game1.png);
+  background-image: url(img/game1.png);
 }
+
 .game2 {
-    background-image: url(img/game2.png);
+  background-image: url(img/game2.png);
 }
+
 .game3 {
-    background-image: url(img/game3.png);
+  background-image: url(img/game3.png);
 }
+
+@media (max-width: 786px) {
+  .welcome {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .games {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 1221px;
+  }
+  .title {
+    width: 343px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .desc {
+    width: 343px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .button_div {
+    padding-left: 70px;
+  }
+}/*# sourceMappingURL=style.css.map */
