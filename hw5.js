@@ -3,10 +3,11 @@
 const number = (a, b) => {
 if (a <= b) {
     return a
-} if else (b <= a) {
+} else {
     return b
 }
 }
+number(a, b)
 
 // Задание 2
 const number1 = (num) => {
@@ -18,6 +19,7 @@ const number1 = (num) => {
         return message2
     }
 }
+number1(num)
 
 // Задание 3
 
@@ -29,6 +31,7 @@ let n = (Number) => {
     let mult = Number ** 2
     return mult;
 }
+n(Number)
 
 // Задание 4 
 
@@ -41,6 +44,7 @@ let age = (prompt('Сколько вам лет?')) => {
         alert ('Добро пожаловать!') 
      }
     }
+    age()
 
 // Задание 5
 
@@ -52,6 +56,7 @@ let numbers = (a, b) => {
         alert ('Одно или оба значения не являются числом')
     }
 }
+numbers(a,b)
 // Задание 6 
 
 let number = (prompt('введите число')) => {
@@ -62,6 +67,7 @@ let number = (prompt('введите число')) => {
         alert ('Переданный параметр не является числом')
     }
 }
+number()
 
 // Задание 7 
 
@@ -85,12 +91,14 @@ const circle2 = {
     getArea: getCircleArea,
     getPerimeter: getCirclePerimeter,
 };
+getCircleArea()
+getCirclePerimeter()
 
 // Задание 8 
 
 function gameseasons () {
     
-let monthNumber = prompt ('Введине номер месяца');
+let monthNumber = prompt ('Введите номер месяца');
 monthNumber = Number (monthNumber);
 
 switch (monthNumber) {
@@ -119,3 +127,4 @@ switch (monthNumber) {
         break;
 }
 }
+gameseasons()
