@@ -1,8 +1,8 @@
 // Задание 1 
 let password = 'пароль';
 let input = prompt('Введите пароль');
-password = input
-if (password = true) {
+
+if (password === input) {
     alert('Пароль введен верно');
 } else {
    alert('Пароль введен неправильно');
@@ -31,14 +31,14 @@ if (d > 100 || e > 100) {
 let a = '2';
 let b = '3';
 // Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
-let a = Number
-let b = Number
+a = Number (a)
+b = Number (b)
 alert(a + b);
 
 // Задание 5 
 
 let monthNumber = prompt ('Введине номер месяца')
-monthNumber = Number
+monthNumber = Number (monthNumber)
 
 switch (monthNumber) {
     case 1:
@@ -68,35 +68,37 @@ switch (monthNumber) {
 
 // Задание 7 
 let number = prompt ('Пожалуйста, введите любое число')
-if (number = Number) {
+
+if (isNaN (number)) {
     console.log(number);
-} else if {
-    console.log(NaN);
-}else if (number / 2 = % = 0) {
-    console.log('число чётное');
+} else if (number % 2 === 0) {
+    alert('число чётное');
 } else {
-    alert (' число нечетное');
+    alert('число нечетное');
 }
 
 // Задание 8 и 9 
-let clientOS = 0 || 1
-let clientOS = prompt (Какая у вас операционная система? Если iOS, то введите цифру 0, есди Android, то цифру 1.)
-0 = iOS
-1 = Android
-if (clientOS = 0) {
+
+let clientOS = prompt ('Какая у вас операционная система? Если iOS, то введите цифру 0, есди Android, то цифру 1.')
+const iOS = 0
+const Android = 1
+if (clientOS === iOS) {
     console.log('Установите версию приложения для iOS по ссылке');
-} else {
+} else if (clientOS === Android) {
     console.log('Установите версию приложения для Android по ссылке');
+} else {
+console.log('Вы ввели неверные данные');
 }
-let clientDeviceYear = 2015 
-clientDeviceYear = prompt ('В каком году произведён Ваш телефон');
-if (clientOS = 0 && clientDeviceYear >= 2015) {
+
+const clientDeviceYear = 2015 
+let clientDevice = prompt ('В каком году произведён Ваш телефон');
+
+if (clientOS === iOS && clientDevice >= clientDeviceYear) {
     alert ('Установите версию приложения для iOS по ссылке')
-} else if (clientOS = 1 && clientDeviceYear >= 2015) {
+} else if (clientOS === Android && clientDevice >= clientDeviceYear) {
     alert ('Установите версию приложения для Android по ссылке')
-}
-if (clientOS = 0 && clientDeviceYear < 2015) {
+} else if (clientOS === iOS && clientDevice < clientDeviceYear) {
     alert ('Установите облегченную версию приложения для iOS по ссылке')
-} else if (clientOS = 1 && clientDeviceYear < 2015) {
+} else if (clientOS === Android && clientDevice < clientDeviceYear) {
     alert ('Установите облегченную версию приложения для Android по ссылке')
 }
