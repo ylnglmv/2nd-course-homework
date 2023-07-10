@@ -21,11 +21,18 @@ console.log(numbers);
 
 // Задание 4
 
-const arr = [
-    [1, 1, 1], 
-    [1, 1, 1], 
-    [1, 1, 1]
-]
+let arr = [];
+
+for (let i = 0; i <= 1; i++) {
+	arr[i] = []; 
+	
+	for (let j = 0; j <= 1; j++) {
+		arr[i].push(j + 1);
+	}
+}
+
+console.log(arr);
+
 
 // Задание 5 
 
@@ -44,7 +51,7 @@ console.log(s);
 
 const nu = [9, 8, 7, 6, 5]
 let guess = Number((prompt ('Угадайте число')))
-if (guess of nu) {
+if (guess === nu) {
     alert ('Угадал')
 } else {
     alert ('Не угадал')
@@ -55,47 +62,44 @@ if (guess of nu) {
 const str = 'abcdef'; 
 const result = str.split(''); 
 result.reverse()
+result.toString ()
 console.log(result);
 
 // Задание 9 
 
-const massive = [
-    [1, 2, 3,],
-    [4, 5, 6],
-]
-for (let element of massiveIn) {
-    console.log(element);
-}
+const massive1 = [1, 2, 3,];
+const massive2 = [4, 5, 6];
+
+const all = [...massive1, ...massive2]; 
+console.log(all);
 
 // Задание 10
 
-const g = [3,7,8,4,5,1];
-for (let item of g) {
-	for (let i = 0 + i+1) {
-	console.log (g);
-	}
+let g = [3,7,8,4,5,1];
+
+for (let i = 0; i <= g.length; i++) {
+	console.log(arr[i]);
 }
 
 // Задание 11
 
 function mult {
     const g = [3,7,8,4,5,1]
-    g.map(g ** 2)
-    console.log(g);
+    let result = g.map(item => (item ** 2))
+    console.log(result);
 }
 
 // Задание 12
-function getLengthWords () {
-    const words = ['слово', '', 'слог', 'длинное предложение', 'буква'];
-    words.length()
-}
-getLengthWords ()
+
+const getLength = source => source.map(str => str.length);
+getLength(['слово', '', 'слог', 'длинное предложение', 'буква']); // [5, 0, 4, 19, 5]
 
 // Задание 13
 
 function filterPositive(array) {
     const n = [-25, 25, 0, -1000, -2]
-    return (-n)
+    const result = n.filter (item => (-item))
+    console.log(result);
   }
   
   filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
