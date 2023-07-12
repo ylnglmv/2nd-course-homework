@@ -51,7 +51,7 @@ console.log(s);
 
 const nu = [9, 8, 7, 6, 5]
 let guess = Number((prompt ('Угадайте число')))
-if (guess === nu) {
+if (nu.includes(guess)) {
     alert ('Угадал')
 } else {
     alert ('Не угадал')
@@ -60,9 +60,7 @@ if (guess === nu) {
 // Задание 8
 
 const str = 'abcdef'; 
-const result = str.split(''); 
-result.reverse()
-result.toString ()
+const result = str.split('').reverse().join('')
 console.log(result);
 
 // Задание 9 
@@ -77,8 +75,9 @@ console.log(all);
 
 let g = [3,7,8,4,5,1];
 
-for (let i = 0; i <= g.length; i++) {
-	console.log(arr[i]);
+for (let i = 0; i < g.length - 1; i++) {
+    let sum = arr[i] + arr[i + 1]
+	console.log(sum);
 }
 
 // Задание 11
@@ -97,10 +96,16 @@ getLength(['слово', '', 'слог', 'длинное предложение'
 // Задание 13
 
 function filterPositive(array) {
-    const n = [-25, 25, 0, -1000, -2]
-    const result = n.filter (item => (-item))
-    console.log(result);
+    let result = []
+
+    for (let index = 0; index < array.length; index++) {
+       if (array[index] < 0) {
+        result.push(array[index])
+       }
+    }
+    return result;
+    
   }
   
-  filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
-  filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
+  console.log (filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
+ console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
