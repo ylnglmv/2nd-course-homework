@@ -31,7 +31,7 @@ for (let i = 0; i <= 1; i++) {
 	}
 }
 
-console.log(arr); 
+console.log(hello); 
 
 
 // Задание 5 
