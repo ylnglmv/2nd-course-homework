@@ -21,17 +21,17 @@ console.log(numbers);
 
 // Задание 4
 
-let arr = [];
+let hello = [];
 
 for (let i = 0; i <= 1; i++) {
-	arr[i] = []; 
+	hello[i] = []; 
 	
 	for (let j = 0; j <= 1; j++) {
-		arr[i].push(j + 1);
+		hello[i].push(j + 1);
 	}
 }
 
-console.log(arr);
+console.log(arr); 
 
 
 // Задание 5 
