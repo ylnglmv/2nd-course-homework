@@ -6,9 +6,13 @@ console.log(answer);
 
 // Задание 2 
 
-function searchStart (str) {
-    return str.indexOf();
+function searchStart (massive, str) {
+    massive.toLowerCase();
+    str.toLowerCase();
+    massive.filter(startWith.str);
+    return str;
 }
+
 searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
 searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
 searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
@@ -28,10 +32,10 @@ Math.min(52, 53, 49, 77, 21, 32);
 
 // Задание 5 
 
-function getRandomArbitrary(1, 10) {
-    return Math.random() * (10 - 1) + 1;
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
   }
-  console.log(getRandomArbitrary);
+ getRandomArbitrary(1,10)
   
 // Задание 6 
 
@@ -39,7 +43,7 @@ function getRandomArrNumbers(numb) {
     let array = [];
     let halfArray = Math.floor(numb / 2);
     for (let i = 0; i < halfArray; i++) {
-        array.push(Math.ceil(Math.random(num) * num));
+        array.push(Math.ceil(Math.random(numb)));
     }
     return array
 }
@@ -49,9 +53,11 @@ getRandomArrNumbers(12);
 
 // Задание 7 
 
-function getRandomArbitrary(5, 35) {
-    return Math.random() * (35 - 5) + 5;
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
   }
+
+  getRandomArbitrary(5, 35)
 
 // Задание 8
 
@@ -68,8 +74,7 @@ setDate(getDate(73))
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
 "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-let myDate = new Date();
-myDate.setHours();
+let myDate = new Date(myDate.setHours());
 let fullDate = "Сегодня: " + myDate.getDate() + " " + months[myDate.getMonth()] +  " " + myDate.getFullYear() +  ", " + days[myDate.getDay()];
 console.log(fullDate);
 
@@ -85,7 +90,7 @@ let last = promt('Чему равнялся последний элемент м
 
 if (first === [0] && last === [7]) {
     alert('Поздравляю, вы выиграли!')
-} if else (first === [0] || last === [7]) { 
+} else if (first === [0] || last === [7]) { 
     alert('Вы были близки к победе!')
 } else {
     alert('Вы ответ или неверно!')
