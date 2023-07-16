@@ -23,37 +23,35 @@
 </div>
  <div class="games">
     <div class="game game1">
-    <p>Игра 1</p>
     </div>
  <div class="game game2">
-    <p>Игра 2</p>
     </div>
      <div class="game game3">
     <p>Игра 3</p>
     </div>
  </div>
- <div class="firstgame">
+ <div class="firstgame" id="game-1">
     <div class="gamedesc_div">
     <h1 class="gametitle">Времена года!</h1>
     <p class="gamedesc">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-    <button onclick="gameseasons();" class="playbutton">Играть!</button>
+    <button class="playbutton" onclick="gameseasons();">Играть!</button>
     </div>
     <div class="gamepicture">
         <img class="pictureplay" src="img/play1.png" alt="игра1">
     </div>
  </div>
  <div class="secondgame">
-        <div class="gamepicture">
+        <div class="gamepicture" id="game-2">
             <img class="pictureplay" src="img/play2.png" alt="игра2">
         </div>
         <div class="game2desc_div">
         <h1 class="gametitle">Запомни слова</h1>
         <p class="gamedesc">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
-        <button onclick="gameguess();" class="playbutton">Играть!</button>
+        <button class="playbutton" onclick="gameguess();">Играть!</button>
         </div>
         </div>
         
  </div>
- <script src="hw7.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>
