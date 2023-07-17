@@ -36,16 +36,16 @@ function gameseasons() {
 // Задание 11
 
 function gameguess() {
-    let list = [['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']];
-    list = list.sort(() => Math.random() - 0.5);
-    alert(list)
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    list = list.sort() => Math.random() - 0.5;
+    alert(list);
     
-    let first = prompt('Чему равнялся первый элемент массива?')
-    let last = promt('Чему равнялся последний элемент массива?')
+    let first = prompt('Чему равнялся первый элемент массива?');
+    let last = prompt('Чему равнялся последний элемент массива?');
     
-    if (first === [0] && last === [7]) {
+    if (first === [0] && last === list.length -1 ) {
         alert('Поздравляю, вы выиграли!')
-    } else if (first === [0] || last === [7]) { 
+    } else if (first === [0] || last === list.length - 1) { 
         alert('Вы были близки к победе!')
     } else {
         alert('Вы ответ или неверно!')

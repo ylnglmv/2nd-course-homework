@@ -7,92 +7,77 @@ console.log(answer);
 // Задание 2 
 
 function searchStart (massive, str) {
-    massive.toLowerCase();
-    str.toLowerCase();
-    massive.filter(startWith.str);
-    return str;
+    massive.forEach((product)) => {
+         if (product.toLowerCase().startWith(search.toLowerCase())) {
+             console.log(product);
+         }
+          return massive;
+ }
 }
 
-searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
-searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
-searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
+ searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
+ searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
+ searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
 
-// Задание 3 
+ // Задание 3 
 
-Math.round(32.58884)
+ Math.round(32.58884)
 
-Math.floor(32.58884)
+ Math.floor(32.58884)
 
-Math.ceil(32.58884)
+ Math.ceil(32.58884)
 
-// Задание 4 
+ // Задание 4 
 
-Math.max(52, 53, 49, 77, 21, 32);
-Math.min(52, 53, 49, 77, 21, 32);
+ Math.max(52, 53, 49, 77, 21, 32);
+ Math.min(52, 53, 49, 77, 21, 32);
 
-// Задание 5 
+ // Задание 5 
 
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-  }
- getRandomArbitrary(1,10)
+ function getRandomArbitrary(min, max) {
+     return Math.random() * (max - min) + min;
+   }
+  getRandomArbitrary(1,10)
   
-// Задание 6 
+ // Задание 6 
 
-function getRandomArrNumbers(numb) {
-    let array = [];
-    let halfArray = Math.floor(numb / 2);
-    for (let i = 0; i < halfArray; i++) {
-        array.push(Math.ceil(Math.random(numb)));
-    }
-    return array
-}
+ function getRandomArrNumbers(numb) {
+     let array = [];
+     let halfArray = Math.floor(numb / 2);
+     for (let i = 0; i < halfArray; i++) {
+         array.push(Math.ceil(Math.random(numb)));
+     }
+     return array
+ }
 
-getRandomArrNumbers(7); 
-getRandomArrNumbers(12); 
+ getRandomArrNumbers(7); 
+ getRandomArrNumbers(12); 
 
-// Задание 7 
+ // Задание 7 
 
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-  }
+ function getRandomArbitrary(min, max) {
+     return Math.random() * (max - min) + min;
+   }
 
-  getRandomArbitrary(5, 35)
+   getRandomArbitrary(5, 35)
 
-// Задание 8
+ // Задание 8
 
-let nowDate = new Date();
-console.log(nowDate);
+ let nowDate = new Date();
+ console.log(nowDate);
 
-// Задание 9
+ // Задание 9
 
-let currentDate = new Date();
-setDate(getDate(73))
+ let currentDate = new Date();
+ setDate(getDate(73))
+
 
 // Задание 10
 
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
 "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-let myDate = new Date(myDate.setHours());
-let fullDate = "Сегодня: " + myDate.getDate() + " " + months[myDate.getMonth()] +  " " + myDate.getFullYear() +  ", " + days[myDate.getDay()];
+let myDate = new Date();
+let fullDate = "Сегодня: " + myDate.getDate() + " " + months[myDate.getMonth()] +  " " + myDate.getFullYear() +  ", " + myDate.getDay() + "," + myDate.getHours() + " " + myDate.getMinutes() + " " + myDate.getSeconds();
 console.log(fullDate);
 
-// Задание 11
-
-function gameguess () {
-let list = [['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']];
-list = list.sort(() => Math.random() - 0.5);
-alert(list)
-
-let first = prompt('Чему равнялся первый элемент массива?')
-let last = promt('Чему равнялся последний элемент массива?')
-
-if (first === [0] && last === [7]) {
-    alert('Поздравляю, вы выиграли!')
-} else if (first === [0] || last === [7]) { 
-    alert('Вы были близки к победе!')
-} else {
-    alert('Вы ответ или неверно!')
-}
-}
