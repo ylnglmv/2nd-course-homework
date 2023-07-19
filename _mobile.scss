@@ -2,19 +2,21 @@
     .welcome {
         padding-left: 16px;
         padding-right: 16px;
+        height: 500px;
     }
     .games {
         padding-left: 16px;
         padding-right: 16px;  
         height: 1221px; 
+        padding-top: 128px;
     }
     .title {
-        width: 343px;
+        //width: 343px;
         font-size: 32px;
         text-align: center;
     }
     .desc {
-        width: 343px;
+        //width: 343px;
         font-size: 14px;
         text-align: center;
         font-weight: 300;
@@ -24,7 +26,7 @@
         padding-left: 70px;
     }
     .firstgame {
-        width: 343px;
+        //width: 343px;
         padding-left: 30px;
         padding-right: 52px;
     }
@@ -37,5 +39,10 @@
     .pictureplay {
         width: 344px;
         height: 236px;
+    }
+    .secondgame {
+        //width: 343px;
+        padding-left: 30px;
+        padding-right: 52px; 
     }
 }
