@@ -135,11 +135,13 @@ body {
   .welcome {
     padding-left: 16px;
     padding-right: 16px;
+    height: 500px;
   }
   .games {
     padding-left: 16px;
     padding-right: 16px;
     height: 1221px;
+    padding-top: 128px;
   }
   .title {
     font-size: 32px;

@@ -37,7 +37,7 @@ function gameseasons() {
 
 function gameguess() {
     let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-    list = list.sort() => Math.random() - 0.5;
+    list = list.sort(() => Math.random() - 0.5);
     alert(list);
     
     let first = prompt('Чему равнялся первый элемент массива?');

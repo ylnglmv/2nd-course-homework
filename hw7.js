@@ -1,19 +1,17 @@
 // Задание 1 
 
 const answer = ('Без рук, а рисует. Без зубов, а кусает'); 
-answer.toUpperCase() 
+answer = answer.toUpperCase() 
 console.log(answer);
 
 // Задание 2 
 
 function searchStart (massive, str) {
-    massive.forEach((product)) => {
-         if (product.toLowerCase().startWith(search.toLowerCase())) {
-             console.log(product);
-         }
-          return massive;
+   return massive.filter((product) => 
+     product.toLowerCase().startsWith(search.toLowerCase())) {
+     }    
  }
-}
+
 
  searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
  searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
@@ -45,7 +43,7 @@ function searchStart (massive, str) {
      let array = [];
      let halfArray = Math.floor(numb / 2);
      for (let i = 0; i < halfArray; i++) {
-         array.push(Math.ceil(Math.random(numb)));
+         array.push(Math.ceil(Math.random() * numb));
      }
      return array
  }
@@ -78,6 +76,7 @@ const days = ["Воскресенье", "Понедельник", "Вторни�
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
 "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 let myDate = new Date();
-let fullDate = "Сегодня: " + myDate.getDate() + " " + months[myDate.getMonth()] +  " " + myDate.getFullYear() +  ", " + myDate.getDay() + "," + myDate.getHours() + " " + myDate.getMinutes() + " " + myDate.getSeconds();
+let fullDate = "Сегодня: " + myDate.getDate() + " " + months[myDate.getMonth()] +  " " + myDate.getFullYear() +  ", " + days[myDate.getDay()]
+ + myDate.getHours() + " " + myDate.getMinutes() + " " + myDate.getSeconds();
 console.log(fullDate);
 
