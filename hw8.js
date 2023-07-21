@@ -6,8 +6,10 @@ const people = [
     { name: 'Олег', age: 7 },
     { name: 'Оксана', age: 47 }
  ];
- 
- console.log(people.sort(age)) => alert (people);
+ people.sort(function() {
+  console.log(age);
+});
+
 
 // Задание 2
 
@@ -48,8 +50,12 @@ let myDate = new Date();
 let fullDate = "Сегодня: " + myDate.getDate() + " " + months[myDate.getMonth()] +  " " + myDate.getFullYear() +  ", " + days[myDate.getDay()]
  + myDate.getHours() + " " + myDate.getMinutes() + " " + myDate.getSeconds();
 
- let timerId = setTimeout((fullDate, 1000 * 3) => console.log('30 секунд прошло'), 500);
+ let intervalID = fullDate.setInterval(myCallback, 500);
+
+ function myCallback() {
+ let timerId = setTimeout(fullDate, 1000 * 30) => console.log('30 секунд прошло');
 clearTimeout(timerId);
+}
 
 // Задание 4 
 
