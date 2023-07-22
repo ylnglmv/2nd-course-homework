@@ -43,19 +43,17 @@ function filter(array, ruleFunction) {
     
 // Задание 3 
 
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-let myDate = new Date();
-let fullDate = "Сегодня: " + myDate.getDate() + " " + months[myDate.getMonth()] +  " " + myDate.getFullYear() +  ", " + days[myDate.getDay()]
- + myDate.getHours() + " " + myDate.getMinutes() + " " + myDate.getSeconds();
+let count = 0;
 
- let intervalID = fullDate.setInterval(myCallback, 500);
+const intervalId = setInterval(() => {
+    console.log(new Date());
+    count += 3;
+}, 3000);
 
- function myCallback() {
- let timerId = setTimeout(fullDate, 1000 * 30) => console.log('30 секунд прошло');
-clearTimeout(timerId);
-}
+setTimeout(() => {
+    clearInterval(intervalId);
+    console.log("30 секунд прошло");
+}, 30000);
 
 // Задание 4 
 
